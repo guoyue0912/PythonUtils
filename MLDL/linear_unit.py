@@ -45,7 +45,7 @@ def plot(linear_unit):
     input_vecs, labels = get_training_dataset()
     fig = plt.figure()
     ax = fig.add_subplot(111)
-    ax.scatter(list(map(lambda x: x[0], input_vecs)), labels)
+    ax.scatter(list(map(lambda x: x[0], input_vecs)), labels) # map 是 Python 自带的内置函数,它的作用是把一个函数应用在一个(或多个)序列上,把列表中的每一项作为函数输入进行计算,再把计算的结果以列表的形式返回。
     weights = linear_unit.weights
     bias = linear_unit.bias
     x = range(0,12,1)
